@@ -1,0 +1,174 @@
+/* header */
+
+.cabecalho_container {
+    background-color: var(--preto);
+    width: 100%;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.cabecalho {
+    color: var(--preto);
+    background-color: var(--branco);
+    width: 50%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.primeira_linha {
+    font-family: var(--primeira-font);
+    font-size: 16px;
+    font-weight: 600;
+}
+.segunda_linha {
+    font-family: var(--primeira-font);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+}
+.terceira_linha {
+    font-family: var(--primeira-font);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* main */
+
+.primeira_parte {
+    max-width: 700px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.primeira_parte-subtitulo {
+    font-family: var(--primeira-font);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.primeira_parte-texto {
+    font-family: var(--primeira-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.segunda_parte-container {
+    display: flex;
+    max-width: 700px;
+    min-width: 320px;
+    align-items: flex-start;
+    margin-top: 30px;
+    width: 100%;
+}
+.parte-botao {
+    padding: 12px 16px 12px 16px;
+    background-color: var(--preto);
+    
+    font-family: var(--primeira-font);
+    font-size: 14px;
+    font-weight: 500;
+    margin:20px 0 40px;
+    text-decoration: none;
+}
+
+.parte-botao a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.parte-botao a:hover {
+    text-decoration: underline;
+}
+.titulo_segunda-parte {
+    font-family: var(--primeira-font);
+    font-size: 14px;
+    font-weight: 600;
+}
+.lista_segunda-parte {
+    font-family: var(--primeira-font);
+    font-size: 14px;
+    font-weight: 400;
+}
+.lista_segunda-parte li {
+    padding: 5px 0px;
+}
+.lista {
+    background-color: var(--bloco-segunda-parte);
+}
+.segunda_parte-codigo {
+    font-family: var(--primeira-font);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--cinza-escuro); 
+    margin-bottom: 10px;
+}
+
+.segunda_parte-cupom {
+    font-family: var(--primeira-font);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.promocao {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* footer */
+
+.rodape_container {
+    background-color: var(--preto);
+}
+
+.rodape {
+    color: var(--branco);
+    width: 700px;
+    padding: 20px 0px ;
+}
+
+.rodape_nome {
+    font-family: var(--primeira-font);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rodape_end, .rodape_final {
+    font-family: var(--primeira-font);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.rodape_final a {
+    color: var(--branco);
+}
+
+.rodape_image img {
+    padding-right:5px ;
+}
+
+/* responsividade */
+
+@media screen and (max-width:1024px) {
+    .primeira_parte, .segunda_parte-container, .rodape {
+        width: auto;
+    }
+     .rodape_container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .main_container, .rodape {
+        margin: 15px;
+    }
+    .segunda_parte {
+        padding: 0px;
+    }
+}
+
+
